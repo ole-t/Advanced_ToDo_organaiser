@@ -1,0 +1,160 @@
+@import "../colorStyles.scss";
+
+$_font_STYLE_MainMenu: 16px sans-serif;
+$_font_STYLE_SubMenu: italic bold 14px "Arial", serif;
+
+$_fontMainMenuColor: $_colorStyle01_font01; 
+$_fontSubMenuColor: $_colorStyle01_font02; 
+
+$_backgroundColorMainMenu: $_colorStyle01_fone03_activeItem;
+$_backgroundColorSubMenu: $_colorStyle01_fone01;
+
+
+$_backgroundColorMainMenuOnHover: darken(
+    $color: $_backgroundColorMainMenu,
+    $amount: 30%,
+);
+$_backgroundColorSubMenuOnHover: $_backgroundColorMainMenuOnHover;
+
+$_borderColorMainMenu: darken(
+    $color: $_backgroundColorMainMenu,
+    $amount: 30%,
+);
+$_borderColorSubMenu: darken(
+    $color: $_backgroundColorSubMenu,
+    $amount: 50%,
+);
+
+
+//----------------------------------------------------------------------
+//----------------------------------------------------------------------
+//----------------------------------------------------------------------
+.navMainMenu {
+
+    div {
+        border: none;
+    }
+
+    ul {
+        list-style: none; 
+        margin: 0; 
+        padding: 0; 
+    }
+
+    li {
+        background: $_backgroundColorSubMenu;
+    }
+
+    .distanseMenuLevel_2 {
+        display: block;
+        width: 100%;
+        height: 20px;
+        margin: 0;
+        padding: 0;
+        background-color: $_backgroundColorSubMenu;
+        border: none;
+    }
+
+    .ul_navGorizontal {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: flex-start;
+        height: 100%;
+
+        :hover {
+            background-color: $_backgroundColorMainMenuOnHover;
+
+            .distanseMenuLevel_2 {
+                background-color: $_backgroundColorSubMenu;
+            }
+        }
+    }
+
+    .menuBlock_Level_1 {
+        font: $_font_STYLE_MainMenu;
+        color: $_fontMainMenuColor;
+
+        display: block;
+        position: relative;
+        min-width: 50px;
+        background-color: $_backgroundColorMainMenu;
+        cursor: pointer;
+        margin: 4px;
+        width: 120px;
+        height: 100%;
+        //padding: 4px;
+        border: solid 1px $_borderColorMainMenu;
+
+        .menuBlock_Struct {
+            div {
+                padding: 0;
+                margin: 0;
+                border: none;
+                white-space: nowrap;
+            }
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+
+            padding: 0;
+            margin: 0;
+            border: none;
+            width: 100%;
+            
+            .menuBlock_Struct_Left {
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+
+            .menuBlock_Struct_Rigt {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                height: 100%;
+            }
+        }
+
+        .CHANGE_MENU_FOR_MaimMenu {
+            .menuBlock_Struct_Rigt {
+                justify-content: end;
+                padding-left: 5px;
+            }
+        }
+
+        .CHANGE_MENU_FOR_SubMenu {
+            padding-left: 10px;
+            .menuBlock_Struct_Rigt {
+                width: 100%;
+                justify-content: end;
+                padding-left: 5px;
+                padding-right: 4px;
+            }
+        }
+    }
+
+    ul {
+        display: none; 
+
+        font: $_font_STYLE_SubMenu;
+        color: $_fontSubMenuColor;
+    }
+}
+
+.hoverActivate {
+    li:hover > ul {
+        display: block;
+        position: absolute;
+        width: 150px;
+        border: solid 2px $_borderColorSubMenu;
+
+        > li:hover > ul {
+            position: absolute;
+            left: 70%;
+        }
+    }
+}

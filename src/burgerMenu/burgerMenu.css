@@ -1,0 +1,216 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border-width: 0px;
+}
+
+.block_Humburger {
+  display: none;
+}
+
+.My_Btn_Humburher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*  планируемое отображение блока */
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  visibility: hidden;
+  height: 20px;
+  width: 26px;
+  margin-right: 10px;
+  min-width: 15px;
+  border-style: solid;
+  border-color: #474e38;
+  border-width: 1px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  /* background-color: yellow; */
+}
+
+.MenuSlider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  top: 64px;
+  right: -100%;
+  padding: 15px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  /* right: 10px; */
+  /* width: 200px; */
+  background-color: greenyellow;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.MyHumbPolosa-1,
+.MyHumbPolosa-2,
+.MyHumbPolosa-3 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  height: 2px;
+  width: 90%;
+  background-color: #474e38;
+  margin: 2px;
+  padding: 0;
+  border: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#toggle_01 {
+  display: none;
+}
+
+/* События по обоаботке меню гамбуогера:  */
+#toggle_01:checked ~ .MenuSlider {
+  right: 5px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#toggle_01:checked ~ .My_Btn_Humburher .MyHumbPolosa-2 {
+  display: none;
+}
+
+#toggle_01:checked ~ .My_Btn_Humburher .MyHumbPolosa-1 {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: rotate(25deg) translate(1.5px, 2.5px);
+          transform: rotate(25deg) translate(1.5px, 2.5px);
+}
+
+#toggle_01:checked ~ .My_Btn_Humburher .MyHumbPolosa-3 {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: rotate(-25deg) translate(1.5px, -2.5px);
+          transform: rotate(-25deg) translate(1.5px, -2.5px);
+}
+
+.btn_Close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 30px;
+  width: 30px;
+  border-style: solid;
+  border-color: #474e38;
+  border-width: 1px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.span_close-1,
+.span_close-2 {
+  display: block;
+  height: 2px;
+  width: 26px;
+  background-color: #474e38;
+  border-radius: 1px;
+  /* margin-top: 2px; */
+}
+
+.span_close-1 {
+  -webkit-transform: rotate(45deg) translate(0px, 1px);
+          transform: rotate(45deg) translate(0px, 1px);
+}
+
+.span_close-2 {
+  -webkit-transform: rotate(-45deg) translate(0px, -1px);
+          transform: rotate(-45deg) translate(0px, -1px);
+}
+
+.menu__box_1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  list-style-position: inside;
+  line-height: 28px;
+  font-size: 16px;
+  list-style-type: none;
+}
+
+.Menu_Slader_Text-1 {
+  display: inline-block;
+  width: 100%;
+  font-size: 18px;
+  /* background-color: red; */
+}
+
+.menu__box_2 {
+  margin-top: 10px;
+  margin-left: 20px;
+  padding-left: 15px;
+  border-left: solid 1px;
+  font-size: 12px;
+  font-style: italic;
+  text-decoration: underline;
+  list-style-type: none;
+}
+
+.menu__box_2-2 {
+  height: 18px;
+  margin-top: 12px;
+}
+
+/* Для устройств: мобильных и с альюомной ориентацией:  */
+@media (max-width: 900px) and (orientation: landscape) {
+  .MenuSlider {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+@media (max-width: 900px) {
+  .block_Humburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .sub_header_FLEX_Contenner {
+    height: 54px;
+  }
+}

@@ -1,0 +1,74 @@
+@import "../../colorStyles.scss";
+
+header {
+    * {
+        box-sizing: border-box; // размеры блоков с учетом границ
+    }
+
+    div {
+        box-sizing: border-box;
+        //border: solid 1px red;
+        //padding: 2px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 0;
+    padding: 0px;
+    // width: 100%;
+    border: none;
+    //background-color: $_colorStyle01_fone02;
+    z-index: 5;
+
+    .headerContenner {
+        justify-content: space-between;
+        background: $_colorStyle01_fone01;
+        min-height: 50px;
+        border: solid 2px $_colorStyle01_border01;
+        max-height: 50px;
+
+        .h_cont_left {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background-color: $_colorStyle01_fone02;
+            color: $_colorStyle01_font03;
+            width: 150px;
+
+            .logoBlock {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                text-align: center;
+
+                //height: 30px;
+                max-width: 120px;
+                // background: rgb(122, 211, 184);
+            }
+        }
+
+        .h_cont_center {
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .h_cont_right {            
+            justify-content: right;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            width: 150px;
+            
+            background-color: $_colorStyle01_fone02;
+            color: $_colorStyle01_font03;
+        }
+    }
+}

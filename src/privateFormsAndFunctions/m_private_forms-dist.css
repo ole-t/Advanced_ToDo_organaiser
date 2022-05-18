@@ -1,0 +1,57 @@
+.privateList_MenuSingleBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 50px;
+  width: 260px;
+  margin: 2px;
+  background-color: #f3aeae;
+  cursor: pointer;
+}
+
+.isActive_privateList_MenuSingleBlock {
+  border: 2px solid red;
+}
+
+.currentPrivateList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+.currentPrivateList .privateList_SingleItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin: 2px;
+  border: 2px solid blue;
+}
+.currentPrivateList .privateList_SingleItem div {
+  height: 20px;
+  min-width: 20px;
+  margin: 1px;
+  background-color: #aee9f3;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}

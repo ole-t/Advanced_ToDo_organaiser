@@ -1,0 +1,33 @@
+.vectorContenner {
+    position: relative;
+    height: 1em;
+    width: 1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding: 0;
+}
+
+.vectorContenner::before,
+.vectorContenner::after {
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 1px;
+    background-color: rgb(73, 70, 70);
+}
+.vectorContenner::before {
+    transform: translate(-32%, 50%) rotate(45deg);
+}
+.vectorContenner::after {
+    transform: translate(32%, 50%) rotate(-45deg);
+}
+
+// для стрелки вправо добавляем доп класс
+.right{
+    transform: translate(0px, 0px) rotate(-90deg);
+}

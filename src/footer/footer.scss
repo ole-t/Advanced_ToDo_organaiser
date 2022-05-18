@@ -1,0 +1,34 @@
+footer {
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;        
+    background: rgb(158, 212, 142);
+    width: 100%;
+
+    .footerTop{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .footerBottom{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between ;
+    }
+
+    .subFootLeft,
+    .subFooCenter,
+    .subFootRight {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        min-height: 20px;
+        min-width: 50px;
+    }
+
+
+
+
+}

@@ -1,0 +1,47 @@
+.vectorContenner {
+  position: relative;
+  height: 1em;
+  width: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 0px;
+  margin-top: 0px;
+  padding: 0;
+}
+
+.vectorContenner::before,
+.vectorContenner::after {
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 1px;
+  background-color: #494646;
+}
+
+.vectorContenner::before {
+  -webkit-transform: translate(-32%, 50%) rotate(45deg);
+          transform: translate(-32%, 50%) rotate(45deg);
+}
+
+.vectorContenner::after {
+  -webkit-transform: translate(32%, 50%) rotate(-45deg);
+          transform: translate(32%, 50%) rotate(-45deg);
+}
+
+.right {
+  -webkit-transform: translate(0px, 0px) rotate(-90deg);
+          transform: translate(0px, 0px) rotate(-90deg);
+}

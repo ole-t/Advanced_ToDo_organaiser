@@ -1,0 +1,134 @@
+.navMainMenu div {
+  border: none;
+}
+.navMainMenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navMainMenu li {
+  background: white;
+}
+.navMainMenu .distanseMenuLevel_2 {
+  display: block;
+  width: 100%;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  border: none;
+}
+.navMainMenu .ul_navGorizontal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 100%;
+}
+.navMainMenu .ul_navGorizontal :hover {
+  background-color: #909090;
+}
+.navMainMenu .ul_navGorizontal :hover .distanseMenuLevel_2 {
+  background-color: white;
+}
+.navMainMenu .menuBlock_Level_1 {
+  font: 16px sans-serif;
+  color: black;
+  display: block;
+  position: relative;
+  min-width: 50px;
+  background-color: gainsboro;
+  cursor: pointer;
+  margin: 4px;
+  width: 120px;
+  height: 100%;
+  border: solid 1px #909090;
+}
+.navMainMenu .menuBlock_Level_1 .menuBlock_Struct {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  margin: 0;
+  border: none;
+  width: 100%;
+}
+.navMainMenu .menuBlock_Level_1 .menuBlock_Struct div {
+  padding: 0;
+  margin: 0;
+  border: none;
+  white-space: nowrap;
+}
+.navMainMenu .menuBlock_Level_1 .menuBlock_Struct .menuBlock_Struct_Left {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.navMainMenu .menuBlock_Level_1 .menuBlock_Struct .menuBlock_Struct_Rigt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+.navMainMenu .menuBlock_Level_1 .CHANGE_MENU_FOR_MaimMenu .menuBlock_Struct_Rigt {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding-left: 5px;
+}
+.navMainMenu .menuBlock_Level_1 .CHANGE_MENU_FOR_SubMenu {
+  padding-left: 10px;
+}
+.navMainMenu .menuBlock_Level_1 .CHANGE_MENU_FOR_SubMenu .menuBlock_Struct_Rigt {
+  width: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding-left: 5px;
+  padding-right: 4px;
+}
+.navMainMenu ul {
+  display: none;
+  font: italic bold 14px "Arial", serif;
+  color: dimgray;
+}
+
+.hoverActivate li:hover > ul {
+  display: block;
+  position: absolute;
+  width: 150px;
+  border: solid 2px gray;
+}
+.hoverActivate li:hover > ul > li:hover > ul {
+  position: absolute;
+  left: 70%;
+}

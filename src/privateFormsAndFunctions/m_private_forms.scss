@@ -1,0 +1,454 @@
+@import "../colorStyles.scss";
+
+* {
+    box-sizing: border-box;
+}
+
+.privateMenu_ListBlock {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+    //border: solid 4px rgb(44, 41, 245);
+
+    .menu_priv_List_contenner {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        border: solid 2px $_colorStyle01_border01;
+        height: 100%;
+        overflow-y: auto;
+    }
+}
+
+.privateList_MenuSingleBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 28px;
+    min-width: 50px;
+    width: 100%;
+    border: none;
+    border-bottom: solid 1px $_colorStyle01_border01;
+    cursor: inherit;
+    margin: 0;
+    padding: 0;
+
+    .input_ListName {
+        width: 100%;
+        padding: 2px;
+        border: none;
+        outline: none;
+        cursor: inherit;
+        background-color: inherit;
+    }
+
+    .delListMarker {
+        display: none;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        user-select: none;
+        font-size: 1em;
+        font-weight: 400;
+        color: red;
+        border: solid 1px $_colorStyle01_border01;
+        border-radius: 3px;
+
+        overflow: visible;
+        width: 24px;
+        min-width: 24px;
+        margin: 4px;
+        padding: 0;
+    }
+}
+
+.isActive_privateList_MenuSingleBlock {
+    background-color: $_colorStyle01_fone03_activeItem;
+
+    .delListMarker {
+        display: flex;
+    }
+}
+
+.currentPrivateList {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+
+    height: 100%;
+
+    .formNewItemPrivate {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: start;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+
+        .newItemPrivateContent {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            //width: fit-content;
+            width: 400px;
+            border: 2px solid $_colorStyle01_border01;
+
+            .m_note {
+                flex-wrap: nowrap;
+            }
+
+            .inputNewItems {
+                margin-left: 10px;
+                margin-right: 10px;
+                padding: 4px;
+                outline: none;
+                background-color: rgb(197, 192, 192);
+                // width: 100%;
+            }
+        }
+    }
+
+    .privListBlock {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin: 0;
+        padding: 0;
+        height: calc(100% - 50px);
+
+        .privListBlock_left {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            margin: 0;
+            padding: 0;
+            border: solid 2px $_colorStyle01_border01;
+            width: 400px;
+
+            .listNameBlock {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: center;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 24px;
+
+                .listNameInfo {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    justify-content: center;
+                    align-items: center;
+
+                    min-height: 20px;
+                    min-width: 120px;
+                    margin: 0;
+                    padding-top: 0;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    padding-bottom: 2px;
+
+                    border: solid 1px $_colorStyle01_border01;
+                    border-top: none;
+                    border-radius: 0 0 6px 6px;
+                    background-color: $_colorStyle01_fone03_activeItem;
+                    color: $_colorStyle01_font01;
+                    //font-size: 0.9em;
+                    font-weight: 400;
+                }
+            }
+
+            .currentPrivateList_block {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                margin: 0;
+                padding: 0;
+                overflow-y: auto;
+                border: none;
+
+                .blockArray {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    align-items: center;
+                    margin: 0;
+                    padding: 0;
+                    width: 100%;
+
+                    .privateList_SingleItem {
+                        * {
+                            display: flex;
+                            justify-content: start;
+                            align-items: flex-start;
+                            flex-wrap: nowrap;
+                            box-sizing: border-box;
+                            margin: 0;
+                            padding: 0;
+                            // color: $_colorStyle01_font01;
+                        }
+
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: nowrap;
+                        height: 1.6em;
+                        width: 100%;
+                        //min-width: 200px;
+                        background-color: $_colorStyle01_fone01;
+                        border: 2px solid $_colorStyle01_fone01; // назначаем цвет фона, чтобы не видно было
+                        border-right: none;
+                        margin: 0;
+                        padding: 0;
+
+                        .nomPP {
+                            width: 34px;
+                            min-width: 34px;
+                        }
+
+                        .customCheckbox_01 {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+
+                            user-select: none;
+                            font-weight: 200;
+                            background-color: inherit;
+                            border: solid 1px $_colorStyle01_border01;
+                            border-radius: 3px;
+                            overflow: visible;
+                            width: 24px;
+                            min-width: 24px;
+                            margin-left: 10px;
+                            color: $_colorStyle01_font01;
+
+                            .markerBlock {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: center;
+                                align-items: center;
+                            }
+
+                            .mDisplayNone {
+                                display: none;
+                            }
+                        }
+
+                        .itemText {
+                            width: 100%;
+                            min-width: 100px;
+                            margin-left: 10px;
+                            outline: none;
+                            border: none;
+                            background-color: inherit;
+                            cursor: default;
+                        }
+
+                        .checked_ItemText {
+                            text-decoration: line-through;
+                        }
+
+                        .del_Inem_Button {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            user-select: none;
+                            font-size: 1em;
+                            font-weight: 400;
+                            color: red;
+                            border: solid 1px $_colorStyle01_border01;
+                            border-radius: 3px;
+                            overflow: visible;
+                            width: 24px;
+                            min-width: 24px;
+                            margin-left: 4px;
+                            margin-right: 10px;
+                        }
+
+                        .comment_is_marker {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            text-align: center;
+                            width: 20px;
+                            min-width: 20px;
+                            margin-left: 5px;
+                            margin-right: 5px;
+                            cursor: default;
+                        }
+
+                        .activeItemDistanceContenner {
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: nowrap;
+                            justify-content: right;
+                            align-items: center;
+                            width: 20px;
+                            min-width: 20px;
+                            border: none;
+                            margin: 0;
+                            margin-left: 4px;
+                            padding: 0;
+
+                            .activeItemDistance {
+                                width: 100%;
+                                height: 2px;
+                                border: none;
+                                background-color: $_colorStyle01_fone02;
+                                margin: 0;
+                                padding: 0;
+                                border: none;
+                            }
+                        }
+
+                        &:hover {
+                            transition: 0.1s;
+                            border-color: $_colorStyle01_border01;
+                        }
+                    }
+
+                    .active_privateList_SingleItem {
+                        //border: 2px solid rgb(34, 179, 5);
+                        background-color: $_colorStyle01_fone03_activeItem;
+                    }
+                }
+            }
+        }
+
+        .privListBlock_right {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: start;
+            align-items: center;
+            border: solid 2px $_colorStyle01_border01;
+            margin: 0;
+            margin-left: 10px;
+            padding: 0;
+            width: 200px;
+            height: 100%;
+
+            .privListBlock_right_SUB_LEFT {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+
+                .commentHeader {
+                    height: 24px;
+                    padding-left: 6px;
+                    font-size: 0.9em;
+                    font-weight: 600;
+                    font-style: italic;
+                }
+
+                .commentsInputRight {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    width: 100%;
+                    height: 100%;
+                    resize: none;
+                    margin: 0;
+                    padding: 4px;
+                    border-top: solid 1px $_colorStyle01_border01;
+                    border-right: solid 1px $_colorStyle01_border01;
+                    border-left: none;
+                    border-bottom: none;
+                    outline: none;
+                }
+            }
+
+            .privListBlock_right_SUB_RIGHT {
+                background-color: $_colorStyle01_fone01;
+                padding-left: 4px;
+
+                .dopInfoZaglav {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0;
+                    padding: 0;
+                    padding-top: 6px;
+                    padding-bottom: 6px;
+                    border: none;
+                    border-radius: 6px 0 0 6px;
+                    background-color: $_colorStyle01_fone02;
+                    color: $_colorStyle01_font03;
+                    font-size: 0.8em;
+                    writing-mode: vertical-lr; // поворот текста
+                    // text-orientation: upright;
+                }
+            }
+        }
+    }
+}
+
+.nameCurrentListPrivate {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    //border: solid 4px goldenrod;
+    margin: 0;
+    padding: 0;
+}
+
+.universalDialogForm {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba($color: #000000, $alpha: 0.8);
+    border-color: $_colorStyle01_border01;
+    margin: 10px;
+    padding: 10px;
+
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    margin: 0;
+    padding: 10px;
+
+    .sub_universalDialogForm {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: gainsboro;
+        border: solid 2px $_colorStyle01_border01;
+        width: 400px;
+        height: 200px;
+    }
+}
+
+.mDisplayNone {
+    display: none;
+}

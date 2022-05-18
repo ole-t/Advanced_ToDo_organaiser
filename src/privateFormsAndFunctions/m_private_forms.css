@@ -1,0 +1,635 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.privateMenu_ListBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  height: 100%;
+}
+.privateMenu_ListBlock .menu_priv_List_contenner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  border: solid 2px dimgray;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.privateList_MenuSingleBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 28px;
+  min-width: 50px;
+  width: 100%;
+  border: none;
+  border-bottom: solid 1px dimgray;
+  cursor: inherit;
+  margin: 0;
+  padding: 0;
+}
+.privateList_MenuSingleBlock .input_ListName {
+  width: 100%;
+  padding: 2px;
+  border: none;
+  outline: none;
+  cursor: inherit;
+  background-color: inherit;
+}
+.privateList_MenuSingleBlock .delListMarker {
+  display: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 1em;
+  font-weight: 400;
+  color: red;
+  border: solid 1px dimgray;
+  border-radius: 3px;
+  overflow: visible;
+  width: 24px;
+  min-width: 24px;
+  margin: 4px;
+  padding: 0;
+}
+
+.isActive_privateList_MenuSingleBlock {
+  background-color: gainsboro;
+}
+.isActive_privateList_MenuSingleBlock .delListMarker {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.currentPrivateList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.currentPrivateList .formNewItemPrivate {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.currentPrivateList .formNewItemPrivate .newItemPrivateContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 400px;
+  border: 2px solid dimgray;
+}
+.currentPrivateList .formNewItemPrivate .newItemPrivateContent .m_note {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+.currentPrivateList .formNewItemPrivate .newItemPrivateContent .inputNewItems {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 4px;
+  outline: none;
+  background-color: #c5c0c0;
+}
+.currentPrivateList .privListBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
+  height: calc(100% - 50px);
+}
+.currentPrivateList .privListBlock .privListBlock_left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
+  border: solid 2px dimgray;
+  width: 400px;
+}
+.currentPrivateList .privListBlock .privListBlock_left .listNameBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 24px;
+}
+.currentPrivateList .privListBlock .privListBlock_left .listNameBlock .listNameInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 20px;
+  min-width: 120px;
+  margin: 0;
+  padding-top: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 2px;
+  border: solid 1px dimgray;
+  border-top: none;
+  border-radius: 0 0 6px 6px;
+  background-color: gainsboro;
+  color: black;
+  font-weight: 400;
+}
+.currentPrivateList .privListBlock .privListBlock_left .currentPrivateList_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  border: none;
+}
+.currentPrivateList .privListBlock .privListBlock_left .currentPrivateList_block .blockArray {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.currentPrivateList .privListBlock .privListBlock_left .currentPrivateList_block .blockArray .privateList_SingleItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  height: 1.6em;
+  width: 100%;
+  background-color: white;
+  border: 2px solid white;
+  border-right: none;
+  margin: 0;
+  padding: 0;
+}
+.currentPrivateList .privListBlock .privListBlock_left .currentPrivateList_block .blockArray .privateList_SingleItem * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.currentPrivateList .privListBlock .privListBlock_left .currentPrivateList_block .blockArray .privateList_SingleItem .nomPP {
+  width: 34px;
+  min-width: 34px;
+}
+.currentPrivateList .privListBlock .privListBlock_left .currentPrivateList_block .blockArray .privateList_SingleItem .customCheckbox_01 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-weight: 200;
+  background-color: inherit;
+  border: solid 1px dimgray;
+  border-radius: 3px;
+  overflow: visible;
+  width: 24px;
+  min-width: 24px;
+  margin-left: 10px;
+  color: black;
+}
+.currentPrivateList .privListBlock .privListBlock_left .currentPrivateList_block .blockArray .privateList_SingleItem .customCheckbox_01 .markerBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.currentPrivateList .privListBlock .privListBlock_left .currentPrivateList_block .blockArray .privateList_SingleItem .customCheckbox_01 .mDisplayNone {
+  display: none;
+}
+.currentPrivateList .privListBlock .privListBlock_left .currentPrivateList_block .blockArray .privateList_SingleItem .itemText {
+  width: 100%;
+  min-width: 100px;
+  margin-left: 10px;
+  outline: none;
+  border: none;
+  background-color: inherit;
+  cursor: default;
+}
+.currentPrivateList .privListBlock .privListBlock_left .currentPrivateList_block .blockArray .privateList_SingleItem .checked_ItemText {
+  text-decoration: line-through;
+}
+.currentPrivateList .privListBlock .privListBlock_left .currentPrivateList_block .blockArray .privateList_SingleItem .del_Inem_Button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 1em;
+  font-weight: 400;
+  color: red;
+  border: solid 1px dimgray;
+  border-radius: 3px;
+  overflow: visible;
+  width: 24px;
+  min-width: 24px;
+  margin-left: 4px;
+  margin-right: 10px;
+}
+.currentPrivateList .privListBlock .privListBlock_left .currentPrivateList_block .blockArray .privateList_SingleItem .comment_is_marker {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 20px;
+  min-width: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  cursor: default;
+}
+.currentPrivateList .privListBlock .privListBlock_left .currentPrivateList_block .blockArray .privateList_SingleItem .activeItemDistanceContenner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20px;
+  min-width: 20px;
+  border: none;
+  margin: 0;
+  margin-left: 4px;
+  padding: 0;
+}
+.currentPrivateList .privListBlock .privListBlock_left .currentPrivateList_block .blockArray .privateList_SingleItem .activeItemDistanceContenner .activeItemDistance {
+  width: 100%;
+  height: 2px;
+  border: none;
+  background-color: dimgray;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.currentPrivateList .privListBlock .privListBlock_left .currentPrivateList_block .blockArray .privateList_SingleItem:hover {
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  border-color: dimgray;
+}
+.currentPrivateList .privListBlock .privListBlock_left .currentPrivateList_block .blockArray .active_privateList_SingleItem {
+  background-color: gainsboro;
+}
+.currentPrivateList .privListBlock .privListBlock_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: solid 2px dimgray;
+  margin: 0;
+  margin-left: 10px;
+  padding: 0;
+  width: 200px;
+  height: 100%;
+}
+.currentPrivateList .privListBlock .privListBlock_right .privListBlock_right_SUB_LEFT {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.currentPrivateList .privListBlock .privListBlock_right .privListBlock_right_SUB_LEFT .commentHeader {
+  height: 24px;
+  padding-left: 6px;
+  font-size: 0.9em;
+  font-weight: 600;
+  font-style: italic;
+}
+.currentPrivateList .privListBlock .privListBlock_right .privListBlock_right_SUB_LEFT .commentsInputRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  resize: none;
+  margin: 0;
+  padding: 4px;
+  border-top: solid 1px dimgray;
+  border-right: solid 1px dimgray;
+  border-left: none;
+  border-bottom: none;
+  outline: none;
+}
+.currentPrivateList .privListBlock .privListBlock_right .privListBlock_right_SUB_RIGHT {
+  background-color: white;
+  padding-left: 4px;
+}
+.currentPrivateList .privListBlock .privListBlock_right .privListBlock_right_SUB_RIGHT .dopInfoZaglav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border: none;
+  border-radius: 6px 0 0 6px;
+  background-color: dimgray;
+  color: white;
+  font-size: 0.8em;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+}
+
+.nameCurrentListPrivate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
+}
+
+.universalDialogForm {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-color: dimgray;
+  margin: 10px;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  margin: 0;
+  padding: 10px;
+}
+.universalDialogForm .sub_universalDialogForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: gainsboro;
+  border: solid 2px dimgray;
+  width: 400px;
+  height: 200px;
+}
+
+.mDisplayNone {
+  display: none;
+}
