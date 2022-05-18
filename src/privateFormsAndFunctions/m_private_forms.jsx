@@ -385,7 +385,7 @@ function CurrentPrivateList() {
                             className="commentsInputRight"
                             ref={ref_commentsInputRight}
                             type="text"
-                            maxLength={20}
+                            //maxLength={20}
                             disabled={(activePrivateItemFromRedux >= 0) ? false : true}
                             value={(activePrivateItemFromRedux < 0) ? "" : myTD_BS[activePrivateListFromRedux].newList[activePrivateItemFromRedux].comments}
                             onChange={() => {
